@@ -11,27 +11,26 @@ const handleChange = (value: string) => {
 const Layout: React.FC = () => (
   <>
     <Row justify={"space-between"}>
-      <Col >
+      <Col>
         <Title>Layout & Style</Title>
       </Col>
 
-      <Col >
-        <Row >
-        <Space wrap>
-          <Select
-            defaultValue="EN"
-            style={{ width: 70 }}
-            onChange={handleChange}
-            options={[
-              { value: "en", label: "EN" },
-              { value: "th", label: "ไทย" },
-            ]}
-          />
-        </Space>
-         </Row>
+      <Col>
+        <Row>
+          <Space wrap>
+            <Select
+              defaultValue="EN"
+              style={{ width: 70 }}
+              onChange={handleChange}
+              options={[
+                { value: "en", label: "EN" },
+                { value: "th", label: "ไทย" },
+              ]}
+            />
+          </Space>
+        </Row>
       </Col>
-      </Row>
-   
+    </Row>
 
     <div id="center">
       <Space wrap>
@@ -52,24 +51,37 @@ const Layout: React.FC = () => (
         </Button>
       </Space>
       <Divider />
-
-      <Space wrap>
-        <Button id="Button" size="large">
-          <div id="left-triangle"></div>
-          
-        </Button>
-        <Button id="Button" size="large">
-          <Row>
-            <div id="up-triangle"></div> <div id="down-triangle"></div>
-          </Row>
-
-          
-        </Button>
-        <Button id="Button" size="large">
-          <div id="right-triangle"></div>
-         
-        </Button>
-      </Space>
+      <Row justify={"center"} style={{ paddingLeft: 200}}>
+        <Space wrap>
+          <Button id="Shape" size="large">
+            <div id="left-triangle"></div>
+          </Button>
+          <Button id="Shape" size="large">
+            <Row>
+              <div id="circle"></div>
+            </Row>
+          </Button>
+          <Button id="Shape" size="large">
+            <div id="right-triangle"></div>
+          </Button>
+        </Space>
+      </Row>
+      <div style={{ height: 20}}></div>
+      <Row justify={"center"} style={{ paddingLeft: 0}}>
+        <Space wrap>
+          <Button id="Shape" size="large">
+            <div id="left-triangle"></div>
+          </Button>
+          <Button id="Shape" size="large">
+            <Row>
+              <div id="circle"></div>
+            </Row>
+          </Button>
+          <Button id="Shape" size="large">
+            <div id="right-triangle"></div>
+          </Button>
+        </Space>
+      </Row>
     </div>
   </>
 );

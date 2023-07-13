@@ -42,12 +42,16 @@ body {
   height: auto; 
 }
 
+#Shape {    
+  padding: 70px ;
+  height: auto; 
+}
 
 
 #circle {  
-  width: 140px; /* ความกว้าง */
-  height: 140px; /* ความสูง */
-  background: red; /* สี */
+  width: 80px; /* ความกว้าง */
+  height: 80px; /* ความสูง */
+  background: rgb(137, 137, 137); /* สี */
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
   border-radius: 70px;
